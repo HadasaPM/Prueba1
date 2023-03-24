@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap');
+*
+{
+    /* Buenas praticas eliminando el diseño por defecto del navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  configuracion del contenedor head */
+.header-principal
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 2px;
+    background-color: #F9E949;
+    border: 2px solid #7452FF;
+    /* Usando la funcion rgb definimos el color y a la vez disminuimos la opacidad */
+    box-shadow: 2px 4px 2px rgb(0, 0, 0, 0.25);
+}
+
+.header-menu img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 30px 0 30px 16px;
+}
+.header-logo img
+{
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+}
+.header-marca 
+{
+    width: 164.28px;
+    height: 30px;
+}
+.header-marca p
+{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.main-principal
+{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+.main-section__loguin
+{
+    display: flex;
+    flex-direction: row;
+    width: 418px;
+    margin: 10px 5px 0px 16px;
+    width: 418px;
+    height: 600px;
+    background: #F9E949;
+    border: 3px solid #7452FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.form-login
+{
+    width: 374px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 29px 22px 29px 22px;
+}
+.title
+{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+.loguin-label__user
+{
+
+    position: absolute; 
+    width: 374px;
+    height: 3.2rem;
+    align-content: center;
+    top: 0;
+    margin-top: 100px; 
+}
+#user
+{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #7452FF;
+    text-align: center;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+#user:hover
+{
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.25);
+}
+.loguin-label__password
+{
+    position: absolute; 
+    width: 374px;
+    height: 3.2rem;
+    align-content: center;
+    top: 0;
+     margin-top: 180px; 
+}
+#password
+{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #7452FF;
+    text-align: center;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    position: relative;
+}
+#password:hover
+{
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.25);
+}
+.loguin-label__remebering
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.remembering
+{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #7452FF;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0px 0px 2px black;
+    
+}
+.remembering:checked
+{
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/33/33281.png"); */
+    background-color: #7452FF;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #7452FF;
+}
+.remembering:hover{
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.25);
+    
+}
+.loguin-label__remebering p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 12px;
+    color: black;
+    position: relative;
+    /* background-color: #7452FF;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px; */
+}
+.loguin-label__olvido_contraseña
+{
+    position: absolute;
+    margin-top: 40px;
+    width: 286px;
+    height: 32px;
+    
+}
+/* Olvide la contraseña imput */
+.olvido_contraseña
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 12px;
+    color: white;
+    background-color: #7452FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: relative;
+}
+.olvido_contraseña:hover
+{
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.25);
+}
+
+.loguin-label__buttom
+{
+    width: 258px;
+    height: 84px;
+}
+/* Bottom de ingresar */
+.ingresar
+{
+    width: 258px;
+    height: 84px;
+    position: absolute;
+    margin-top: 220px;
+    background: #7452FF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+/* identical to box height, or 60px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+/* Grises/white */
+    color: #FFFFFF;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.ingresar:hover
+{
+    box-shadow: inset 4px 4px 5px rgb(0, 0, 0, 0.45);
+    text-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main-section__info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    
+}
+/* Configuramos el contenedor de datos prinicipale */
+.main-section__contenedor 
+{
+
+    width: 100%;
+    height: auto;
+}
+/* Configuramos el titulo */
+.main-section__contenedor h1
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "righteous";
+    font-weight:400;
+    font-size: 25px;
+}
+
+/* Configuracion de la imagen */
+.main-section__img_principal
+{
+    width: 80%;
+    height: auto;
+    margin-bottom: 40px;
+}
+/* contenedor de la imagen y los selectores */
+/* .main_section_img
+{
+    
+    width: 100%;
+    height:60%;
+    position: relative;
+    margin-left: 10px;
+} */
+/* selectores - cierculos abajo de la imagen */
+/* .selectores
+{
+    display: flex;
+    position: absolute;
+    bottom: 85px;
+    margin-left: 43%;
+    gap: 10px;
+    
+}
+/* creamos el tamaño y sus bordes */
+.imagen_selectores1
+{
+    
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    user-select: none;
+    
+}
+/* .imagen_selectores1:active
+{
+    background: #F9E949;
+
+} */ 
+/* Botom de pre.registro */
+.pre-registro
+{
+    width: auto;
+    height: 100px;
+    padding: 10px;
+    background: #7452FF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.pre-registro:hover
+{
+    box-shadow: inset 4px 4px 5px rgb(0, 0, 0, 0.45);
+    text-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.informacion
+{
+    display: flex;
+    width: 100%;
+    background-color: #7452FF;
+    border-radius: 2px;
+    border-top: 2px solid #F9E949;
+    margin-top: 10px;
+    box-shadow: inset 1px 1px 1px rgb(0, 0, 0, 0.15);
+}
+.info-conten
+{
+    display: flex; 
+    width: 60%;
+    flex-direction: row;
+}
+.info-conten ul
+{
+    list-style: none;
+}
+.info-conten li{
+    display: inline-block;
+    padding: 10px;
+    font-family: "righteous";
+    font-weight: 20px;
+}
+.redes_sociales
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+    
+}
+.redes_sociales i
+{
+    cursor: pointer;
+}

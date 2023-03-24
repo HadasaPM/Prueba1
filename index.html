@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/31d16a85ff.js" crossorigin="anonymous"></script>
+    <title>PAGINA PRINCIPAL</title>
+</head>
+<body>
+    <!-- encabezado -->
+<header class="header-principal">
+    <!-- menu -->
+        <div class="header-menu">
+            <img src="./logos/menu.png" alt="menu" >
+        </div>
+        <!-- logo -->
+        <div class="header-logo">
+            <img src="./logos/logo.png" alt="">
+        </div>
+        <!-- marca -->
+        <div class="header-marca">
+            <p>By 7team</p>
+        </div>
+</header>
+<!-- Creo un contenedor main para meter toda la informacion del centro -->
+<main class="main-principal">
+    <!-- Creo un section para meter dentro el login -->
+    <section class="main-section__loguin">
+        <!-- Creo el formulario para el loguin -->
+        <form action="loguin" class="form-login">
+            <h1 class="title">Ingrese aqui!</h1>
+            <label class="loguin-label__user"  for="user">
+                <input type="email" name="user" id="user" placeholder="sucorreo@ejemplo.com" autocomplete="">
+            </label>
+            <label class="loguin-label__password"  for="password">
+                <input type="password" name="password" id="password" placeholder="*******">
+            </label>
+            <label class="loguin-label__remebering"  for="remembering">
+                <input type="checkbox" name="olvidosucontraseña" id="remembering" value="recordar" class="remembering">
+                <p>¿Deseas recordar tu contraseña?</p>
+            </label>
+            <label for="" class="loguin-label__olvido_contraseña">
+                <a href="./" id="olvido_contraseña" class="olvido_contraseña">¿Olvidaste tu contraseña?</a>
+            </label>
+            <label for="" class="loguin-label__buttom">
+                <button type="submit" class="ingresar">Entrar</button>
+            </label>
+        </form>
+    </section>
+    <!-- contenedor de informacion central  -->
+    <section class="main-section__info">
+        <div class="main-section__contenedor">
+            <h1>Bienvenido a Liceo Mixto nuevo siglo</h1>
+                <img src="./img/img.png" alt="" class="main-section__img_principal">
+                <!-- botom de pregistro -->
+            <button type="submit" class="pre-registro">Pre-Registro</button>
+        </div>
+    </section>
+</main>
+<footer class="informacion">
+    <div class="info-conten">
+        <ul>
+            <li> <i class="fa-regular fa-envelope"></i> correo: loremipsu@gmail.com</li>
+            <li> <i class="fa-solid fa-phone fa-bounce"></i> telefono: +57 1201202 </i></li>
+            <li><i class="fa-solid fa-location-crosshairs fa-flip"></i> Direccion: calle falsa 123</li>
+        </ul>
+    </div>
+    <div class="redes_sociales">
+        <i class="fa-brands fa-facebook fa-xl fa-beat"></i>
+        <i class="fa-thin fa-mailbox-flag-shake"></i>
+    </div>
+</footer>
+</body>
+</html>
